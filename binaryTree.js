@@ -60,6 +60,14 @@ class BinaryTree {
         return node;
     }
 
+    getMax(){
+        let node = this.root.getRightNode();
+        while(node.getRightNode() != null){
+            node = node.getRightNode();
+        }
+        return node;
+    }
+
     addNode(data, currentNode){
         if(currentNode === undefined){currentNode = this.root};
         if(data < currentNode.data){
@@ -87,4 +95,6 @@ tree.addNode(9);
 tree.addNode(11);
 tree.addNode(29);
 
-console.log(tree.root);
+//console.log(tree.root);
+console.log(tree.getMax());
+//console.log(tree.getMin());
