@@ -95,6 +95,6 @@ tree.addNode(9);
 tree.addNode(11);
 tree.addNode(29);
 
-//console.log(tree.root);
-console.log(tree.getMax());
-//console.log(tree.getMin());
+console.log('tree: ', tree.root);
+console.log('max: ', tree.getMax());
+console.log('min: ', tree.getMin());
